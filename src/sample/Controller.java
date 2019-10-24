@@ -1,7 +1,6 @@
 package sample;
 
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
@@ -22,12 +21,17 @@ public class Controller {
     public Controller() throws SQLException {
     }
 
-    public void addProduct() {
-        String name = productName.getText();
-        String manufacturer = productManufacturer.getText();
-        String type = itemType.toString();
+    @FXML
+    public void initialize() {
 
-        databaseManager.insert(type, manufacturer, name);
+    }
+
+    public void addProduct() {
+//        String name = productName.getText();
+//        String manufacturer = productManufacturer.getText();
+//        String type = itemType.toString();
+
+//        databaseManager.insert(type, manufacturer, name);
         System.out.println("Button Pressed");
     }
 
