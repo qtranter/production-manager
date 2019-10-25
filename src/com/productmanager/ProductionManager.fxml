@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.productmanager.Controller">
   <tabs>
     <Tab text="Product Line">
          <content>
@@ -33,12 +33,12 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label fx:id="" text="Product Name" />
+                        <Label text="Product Name" />
                         <Label text="Manufacturer" GridPane.rowIndex="1" />
                         <Label text="Item Type" GridPane.rowIndex="2" />
-                        <TextField GridPane.columnIndex="1" />
-                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="productName" GridPane.columnIndex="1" />
+                        <TextField fx:id="productManufacturer" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ChoiceBox fx:id="itemType" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                      </children>
                   </GridPane>
                   <Button layoutX="157.0" layoutY="208.0" mnemonicParsing="false" onAction="#addProduct" text="Add Product" />

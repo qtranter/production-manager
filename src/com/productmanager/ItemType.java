@@ -1,4 +1,4 @@
-package sample;
+package com.productmanager;
 
 public enum ItemType {
     AUDIO("AU"),
@@ -12,7 +12,8 @@ public enum ItemType {
         this.itemType = itemType;
     }
 
-    public String getItemType() {
+    @Override
+    public String toString() {
         return itemType;
     }
 }

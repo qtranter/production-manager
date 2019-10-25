@@ -1,4 +1,4 @@
-package sample;
+package com.productmanager;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

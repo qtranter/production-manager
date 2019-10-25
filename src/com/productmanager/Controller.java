@@ -1,6 +1,7 @@
-package sample;
+package com.productmanager;
 
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
@@ -23,15 +24,15 @@ public class Controller {
 
     @FXML
     public void initialize() {
-
+        itemType.setItems(FXCollections.observableArrayList(ItemType.values()));
     }
 
     public void addProduct() {
-//        String name = productName.getText();
-//        String manufacturer = productManufacturer.getText();
-//        String type = itemType.toString();
+        String name = productName.getText();
+        String manufacturer = productManufacturer.getText();
+        String type = itemType.getSelectionModel().getSelectedItem().toString();
 
-//        databaseManager.insert(type, manufacturer, name);
+        databaseManager.insert(type, manufacturer, name);
         System.out.println("Button Pressed");
     }
 
