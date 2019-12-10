@@ -1,6 +1,3 @@
-package com.productmanager;
-
-
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

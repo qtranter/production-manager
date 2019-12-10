@@ -1,5 +1,3 @@
-package com.productmanager;
-
 public interface Item {
 
     int getId();

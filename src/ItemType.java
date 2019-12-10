@@ -1,5 +1,3 @@
-package com.productmanager;
-
 public enum ItemType {
     AUDIO("AU"),
     VISUAL("VI"),

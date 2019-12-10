@@ -1,5 +1,3 @@
-package com.productmanager;
-
 abstract class Product implements Item{
     private int id;
     private String type;
